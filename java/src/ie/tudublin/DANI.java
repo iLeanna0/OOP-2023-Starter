@@ -45,7 +45,7 @@ public class DANI extends PApplet {
 	public void loadFile(){
 		X = loadStrings("small.txt");// Load a text file into a String array
 		
-		for (int i = 0 ; i < lines.length; i++) {
+		for (int i = 0 ; i < X.length; i++) {
 
 			split(X[i], ' '); // Split a string into an array of words
 			X[i].replaceAll("[^\\w\\s]",""); // Remove punction characters
@@ -56,9 +56,9 @@ public class DANI extends PApplet {
 	}
 
 	public void printModel(){
-		for (int x = 0 ; x < line.length; x++) {
+		for (int x = 0 ; x < Z.length; x++) {
 
-			System.out.println(line + "\n");
+			System.out.println(Z + "\n");
 
 		}
 	}
