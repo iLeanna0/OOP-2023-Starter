@@ -12,11 +12,25 @@ public class Word {
         this.follows = follows;
     }
 
-    public String toString()
-    {
-        for (Follow part : follows) {
-            part.display();
-          }
+    @Override
+    public String toString() {
+        return "Word [follows=" + follows + "]";
+    }
+
+    public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
+    }
+
+    public ArrayList<Follow> getFollows() {
+        return follows;
+    }
+
+    public void setFollows(ArrayList<Follow> follows) {
+        this.follows = follows;
     }
 
     public void findFollow(str)

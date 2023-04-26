@@ -9,8 +9,9 @@ public class Follow {
         this.count = count;
     }
 
-    public String toString(){
-
+    @Override
+    public String toString() {
+        return "Follow [word=" + word + ", count=" + count + "]";
     }
 
     public String getWord() {
