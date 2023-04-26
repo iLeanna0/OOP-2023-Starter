@@ -43,22 +43,22 @@ public class DANI extends PApplet {
 	}
 
 	public void loadFile(){
-		X = loadStrings("small.txt");// Load a text file into a String array
+		file = loadStrings("small.txt");// Load a text file into a String array
 		
-		for (int i = 0 ; i < X.length; i++) {
+		for (int i = 0 ; i < file.length; i++) {
 
-			split(X[i], ' '); // Split a string into an array of words
-			X[i].replaceAll("[^\\w\\s]",""); // Remove punction characters
-			X[i].toLowerCase(); // Convert a string to lower case
+			split(file[i], ' '); // Split a string into an array of words
+			file[i].replaceAll("[^\\w\\s]",""); // Remove punction characters
+			file[i].toLowerCase(); // Convert a string to lower case
 		}
 
  		
 	}
 
 	public void printModel(){
-		for (int x = 0 ; x < Z.length; x++) {
+		for (int x = 0 ; x < file2.length; x++) {
 
-			System.out.println(Z + "\n");
+			System.out.println(file2 + "\n");
 
 		}
 	}
