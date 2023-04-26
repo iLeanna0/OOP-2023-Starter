@@ -6,7 +6,7 @@ import processing.core.PApplet;
 
 public class DANI extends PApplet {
 
-	
+
 
 	public void settings() {
 		size(1000, 1000);
@@ -40,5 +40,26 @@ public class DANI extends PApplet {
 		textSize(20);
         textAlign(CENTER, CENTER);
         
+	}
+
+	public void loadFile(){
+		lines = loadStrings("small.txt");// Load a text file into a String array
+		
+		for (int i = 0 ; i < lines.length; i++) {
+
+			split(line, ' '); // Split a string into an array of words
+			w.replaceAll("[^\\w\\s]",""); // Remove punction characters
+			s.toLowerCase(); // Convert a string to lower case
+		}
+
+ 		
+	}
+
+	public void printModel(){
+		for (int x = 0 ; x < line.length; x++) {
+
+			System.out.println(line + "\n");
+
+		}
 	}
 }
